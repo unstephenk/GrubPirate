@@ -7,7 +7,7 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&amp;sensor=true"></script>
     <script src="js/map.js"></script>
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
@@ -26,12 +26,23 @@
   <body ng-app="starter">
 
     <ion-pane>
-      <ion-header-bar class="bar-stable">
+
+      <ion-header-bar align-title="center" class="bar-stable">
         <h1 class="title">GrubPirate</h1>
       </ion-header-bar>
+
       <ion-content>
         <div id="map-canvas"></div>
+        <div id="icon-tray">
+          <img name="profile" src="img/profile.png" alt="profile button">
+          <img name="fleet" src="img/fleet.png" alt="fleet button">
+          <img name="mates" src="img/mates.png" alt="mates button">
+          <img name="find" src="img/find.png" alt="find button">
+          <span class="stretch"></span>
+        </div>
       </ion-content>
+
+
     </ion-pane>
   </body>
 </html>
